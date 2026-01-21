@@ -1,0 +1,7 @@
+2026-01-20 20:56:55,105 - INFO - --- Starting Scraper Session ---
+2026-01-20 20:56:55,706 - INFO - Navigating to: https://learn.upworkmasterclass.io/users/sign_in
+2026-01-20 20:57:25,726 - ERROR - An unexpected error occurred: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://learn.upworkmasterclass.io/users/sign_in", waiting until "networkidle"
+
+2026-01-20 20:57:25,727 - INFO - Closing browser session.

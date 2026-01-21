@@ -1,0 +1,15 @@
+[project]
+name="upwork_course"
+
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "playwright>=1.51.0",
+    "playwright-stealth>=2.0.0",
+    "dotenv>=0.9.9",
+    "python-dotenv>=1.2.1",
+    "asyncio>=4.0.0",
+    "openai>=2.15.0",
+    "sdk>=1.0.0",
+    "openai-agents>=0.6.9",
+]

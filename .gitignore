@@ -1,1 +1,7 @@
-lms_scraper_env
+lms_scraper_env/
+.venv/
+browser_session/
+chrome_profile/
+downloaded_videos/
+lms_session/
+scraper/

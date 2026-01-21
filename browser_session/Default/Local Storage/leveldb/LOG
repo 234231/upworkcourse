@@ -1,2 +1,3 @@
-2026/01/20-17:28:18.592 2b60 Creating DB D:\lms_scraper\browser_session\Default\Local Storage\leveldb since it was missing.
-2026/01/20-17:28:18.607 2b60 Reusing MANIFEST D:\lms_scraper\browser_session\Default\Local Storage\leveldb/MANIFEST-000001
+2026/01/20-21:02:11.051 7b58 Reusing MANIFEST D:\lms_scraper\browser_session\Default\Local Storage\leveldb/MANIFEST-000001
+2026/01/20-21:02:11.055 7b58 Recovering log #3
+2026/01/20-21:02:11.056 7b58 Reusing old log D:\lms_scraper\browser_session\Default\Local Storage\leveldb/000003.log 
