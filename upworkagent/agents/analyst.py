@@ -1,13 +1,30 @@
 # agents/analyst.py
+
 from langchain_openai import ChatOpenAI
 import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
+
+api_key = os.getenv("DEEPSEEK_API_KEY") 
+        
+
+
+
+
+
 
 class AnalystNode:
     def __init__(self):
         api_key = os.getenv("DEEPSEEK_API_KEY")
         # Explicitly passing the key removes the warning
-        self.llm = ChatOpenAI(model="mistralai/devstral-2512:free", openai_api_key=api_key)
-
+        self.llm = ChatOpenAI(
+            api_key=api_key,
+            base_url="https://openrouter.ai/api/v1",
+            model="mistralai/devstral-2512:free"
+        )
     def work(self, state: dict):
         print("Analyst Node is processing competitor data...")
         

@@ -1,19 +1,25 @@
 # agents/router.py
+
 from langchain_openai import ChatOpenAI
 import os
 from dotenv import load_dotenv
 
+
 load_dotenv()
+
+
 api_key = os.getenv("DEEPSEEK_API_KEY") 
         
+
+
 if not api_key:
     raise ValueError("❌ API Key missing! Check your .env file for DEEPSEEK_API_KEY")
 class IntentRouter:
     def __init__(self):
         self.llm = ChatOpenAI(
-            model="mistralai/devstral-2512:free",
-            openai_api_key=os.getenv("DEEPSEEK_API_KEY"),
-            openai_api_base="https://openrouter.ai/api/v1"
+            api_key=api_key,
+            base_url="https://openrouter.ai/api/v1",
+            model="mistralai/devstral-2512:free"
         )
 
     def classify(self, user_input: str):
